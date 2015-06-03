@@ -23,6 +23,7 @@
             android:layout_weight="1"
             android:divider="@color/divider_gray"
             android:dividerHeight="@dimen/divider_height"
+            style="@style/tw__TweetDarkStyle"
             android:drawSelectorOnTop="false"/>
 
     </LinearLayout>

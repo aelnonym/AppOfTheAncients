@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 import com.digits.sdk.android.Digits;
+import com.mopub.common.MoPub;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
-        Fabric.with(this, new Crashlytics(), new Digits(), new Twitter(authConfig));
+        Fabric.with(this, new Crashlytics(), new Digits(), new Twitter(authConfig), new MoPub());
         setContentView(R.layout.activity_main);
 
         loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
@@ -78,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
         }
         if (id == R.id.action_contacts){
             startActivity(new Intent(this, ContactsActivity.class));
+        }
+        if (id == R.id.action_ads){
+            startActivity(new Intent(this, TwitterActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

@@ -45,7 +45,7 @@ public class TimelineActivity extends ListActivity {
 
     private void setTimelineAdapter(){
         final UserTimeline userTimeline = new UserTimeline.Builder()
-                .screenName("antedreymon")
+                .screenName("antedreymon").includeRetweets(true)
                 .build();
 
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(this, userTimeline);

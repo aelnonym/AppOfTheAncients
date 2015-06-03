@@ -7,5 +7,6 @@
     <string name="action_twitter">Twitter</string>
     <string name="action_busca">Busca</string>
     <string name="action_timeline">Timeline</string>
+    <string name="action_ads">Ads</string>
     <string name="timeline_empty">Timeline Vazia :(</string>
 </resources>
