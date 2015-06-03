@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppOfTheAncients</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_log_in">Logar</string>
+    <string name="action_contacts">Contatos</string>
+    <string name="action_settings">Configurações</string>
+</resources>
