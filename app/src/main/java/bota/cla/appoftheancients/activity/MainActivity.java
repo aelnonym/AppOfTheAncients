@@ -47,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Fail to log In", Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
 
     @Override

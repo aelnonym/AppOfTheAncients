@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "bota.cla.appoftheancients.activity.TwitterActivity"/>
+      <point      
+        x = "3428"      
+        y = "1308"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "bota.cla.appoftheancients.activity.TimelineActivity"/>
+      <point      
+        x = "2388"      
+        y = "1580"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "bota.cla.appoftheancients.activity.MainActivity"/>
+      <point      
+        x = "120"      
+        y = "1008"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "bota.cla.appoftheancients.activity.ContactsActivity"/>
+      <point      
+        x = "2348"      
+        y = "8"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "bota.cla.appoftheancients.activity.LoginActivity"/>
+      <point      
+        x = "1128"      
+        y = "-8"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

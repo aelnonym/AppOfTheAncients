@@ -2,7 +2,10 @@ package bota.cla.appoftheancients.activity;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.twitter.sdk.android.tweetui.SearchTimeline;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
@@ -12,10 +15,29 @@ import bota.cla.appoftheancients.R;
 
 public class TimelineActivity extends ListActivity {
 
+    private boolean isSearching = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
+
+        FloatingActionButton button = new FloatingActionButton(this);
+        addContentView(button, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        button.setImageDrawable(getResources().getDrawable(R.drawable.tw__ic_logo_blue));
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isSearching){
+                    setTimelineAdapter();
+                } else {
+                    setSearchAdapter();
+                }
+                isSearching = !isSearching;
+            }
+        });
 
         //default view
         setSearchAdapter();
@@ -23,7 +45,7 @@ public class TimelineActivity extends ListActivity {
 
     private void setTimelineAdapter(){
         final UserTimeline userTimeline = new UserTimeline.Builder()
-                .screenName("fabric")
+                .screenName("antedreymon")
                 .build();
 
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter(this, userTimeline);
