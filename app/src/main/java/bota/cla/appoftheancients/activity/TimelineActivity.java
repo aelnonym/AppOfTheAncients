@@ -1,6 +1,7 @@
 package bota.cla.appoftheancients.activity;
 
 import android.app.ListActivity;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.view.MenuItem;
@@ -26,6 +27,9 @@ public class TimelineActivity extends ListActivity {
         addContentView(button, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         button.setImageDrawable(getResources().getDrawable(R.drawable.tw__ic_logo_blue));
+
+        ColorStateList colors = getResources().getColorStateList(R.color.button_colors);
+        button.setBackgroundTintList(colors);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

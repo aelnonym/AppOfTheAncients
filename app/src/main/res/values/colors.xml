@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="divider_gray">#4A4A4A</color>
+    <color name="accent">#2255AA</color>
+    <color name="primary">#22AADD</color>
+    <color name="primary_dark">#AAEEFF</color>
 </resources>
