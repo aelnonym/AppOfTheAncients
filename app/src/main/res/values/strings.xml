@@ -4,7 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_log_in">Logar</string>
     <string name="action_contacts">Contatos</string>
-    <string name="action_settings">Configurações</string>
+    <string name="action_twitter">Twitter</string>
     <string name="action_busca">Busca</string>
     <string name="action_timeline">Timeline</string>
     <string name="timeline_empty">Timeline Vazia :(</string>
