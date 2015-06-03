@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.twitter.sdk.android.tweetui.SearchTimeline;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
@@ -23,10 +22,7 @@ public class TimelineActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
 
-        FloatingActionButton button = new FloatingActionButton(this);
-        addContentView(button, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-        button.setImageDrawable(getResources().getDrawable(R.drawable.tw__ic_logo_blue));
+        FloatingActionButton button = ((FloatingActionButton) findViewById(R.id.swap_button));
 
         ColorStateList colors = getResources().getColorStateList(R.color.button_colors);
         button.setBackgroundTintList(colors);
